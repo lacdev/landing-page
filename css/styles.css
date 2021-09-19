@@ -226,9 +226,8 @@ body {
 @media (min-width: 320px) and (max-width: 767px) {
   .cta-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
   }
 
   .cta-btn {
