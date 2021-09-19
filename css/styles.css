@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.hero,
+.header {
+  background-color: #1f2937;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.hero-content {
+  display: flex;
+}
+
+.hero-main-text {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.hero-secondary-text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.signup-btn {
+  text-decoration: none;
+  color: #e5e7eb;
+  background-color: #3882f6;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.hero-image-container {
+  width: 10px;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials-text {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.testimonials-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-image-container {
+  min-height: 150px;
+  min-width: 150px;
+  border-radius: 10px;
+  border: 5px solid #3882f6;
+  margin: 30px;
+}
+
+.card-text {
+  margin: 30px;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-container {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding: 70px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.cta-btn {
+  text-decoration: none;
+  color: #e5e7eb;
+  border: 3px solid #e5e7eb;
+  background-color: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.footer {
+  background-color: #1f2937;
+}
+
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.footer-text {
+  color: #e5e7eb;
+}
