@@ -65,13 +65,6 @@ body {
   align-items: flex-start;
 }
 
-/* .hero-image-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-} */
-
 .hero-main-text {
   font-size: 48px;
   font-weight: 900;
@@ -90,7 +83,7 @@ body {
   background-color: #3882f6;
   border: 3px solid #3882f6;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   margin-top: 30px;
   transition: 0.3s ease-in;
 }
@@ -98,7 +91,7 @@ body {
 .signup-btn:hover {
   color: #3882f6;
   background-color: #e5e7eb;
-  border: 3px solid #3882f6;
+  border: 3px solid #e5e7eb;
 }
 
 .hero-image-container {
@@ -123,7 +116,11 @@ body {
 .testimonials-cards {
   display: flex;
   justify-content: space-between;
-  /* width: 1000px; */
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px;
 }
 
 .card-image-container {
@@ -131,12 +128,18 @@ body {
   width: 150px;
   border-radius: 10px;
   border: 5px solid #3882f6;
-  margin: 30px;
 }
 
-/* .card-text {
-  margin: 30px;
-} */
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-text {
+  width: 150px;
+  text-align: left;
+  padding-top: 10px;
+}
 
 .quote {
   background-color: #e5e7eb;
@@ -173,6 +176,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cta-container {
@@ -180,7 +184,6 @@ body {
   color: #e5e7eb;
   display: flex;
   justify-content: center;
-  width: 1200px;
   padding: 50px 50px;
   margin: 50px;
   border-radius: 10px;
@@ -202,7 +205,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 75px;
 }
 
 .cta-btn {
@@ -211,7 +213,7 @@ body {
   border: 3px solid #e5e7eb;
   background-color: none;
   border-radius: 5px;
-  padding: 7px 25px;
+  padding: 10px 25px;
   transition: 0.3s ease-in;
 }
 
@@ -219,6 +221,45 @@ body {
   color: #3882f6;
   border: 3px solid #3882f6;
   background-color: #e5e7eb;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-btn {
+    margin-top: 20px;
+  }
+
+  .cta-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .cta-header,
+  .cta-paragraph {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .footer {
