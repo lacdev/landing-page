@@ -37,6 +37,9 @@ body {
 
 .nav-link {
   margin-left: 20px;
+  padding: 10px 20px;
+  transition: 0.2s ease-in;
+  border-radius: 10px;
 }
 
 .header-logo {
@@ -49,6 +52,12 @@ body {
   text-decoration: none;
   color: #e5e7eb;
   font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #3882f6;
+  background-color: #e5e7eb;
+  /* border: 3px solid #e5e7eb; */
 }
 
 .hero-content {
@@ -104,23 +113,27 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 10px;
 }
 
 .testimonials-text {
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
+  margin: 20px;
 }
 
 .testimonials-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  padding: 5px;
 }
 
 .card {
-  margin: 30px;
+  margin: 50px;
+  padding: 0;
 }
 
 .card-image-container {
@@ -137,8 +150,8 @@ body {
 
 .card-text {
   width: 150px;
-  text-align: left;
-  padding-top: 10px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .quote {
@@ -240,19 +253,36 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .cta-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
+  .testimonials {
+    padding: 10px;
+  }
+
   .testimonials-text {
+    font-size: 20px;
     padding-bottom: 30px;
     text-align: center;
   }
 
   .card {
-    margin: 20px;
+    margin: 10px;
+  }
+
+  .quote-main-text h2 {
+    font-size: 20px;
   }
 
   .cta-btn {
@@ -272,16 +302,10 @@ body {
     text-align: center;
     margin: 10px;
   }
+}
 
+@media (max-width: 967px) {
   .hero-image {
     display: none;
-  }
-
-  .hero-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 }
