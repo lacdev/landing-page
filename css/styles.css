@@ -223,11 +223,35 @@ body {
   background-color: #e5e7eb;
 }
 
+.footer {
+  background-color: #1f2937;
+}
+
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.footer-text {
+  color: #e5e7eb;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .cta-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .testimonials-text {
+    padding-bottom: 30px;
+  }
+
+  .card {
+    margin: 20px;
   }
 
   .cta-btn {
@@ -259,20 +283,4 @@ body {
     align-items: center;
     text-align: center;
   }
-}
-
-.footer {
-  background-color: #1f2937;
-}
-
-.footer-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-}
-
-.footer-text {
-  color: #e5e7eb;
 }
