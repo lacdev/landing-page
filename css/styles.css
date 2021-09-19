@@ -122,8 +122,8 @@ body {
 
 .testimonials-cards {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* width: 1000px; */
 }
 
 .card-image-container {
@@ -134,9 +134,9 @@ body {
   margin: 30px;
 }
 
-.card-text {
+/* .card-text {
   margin: 30px;
-}
+} */
 
 .quote {
   background-color: #e5e7eb;
