@@ -27,6 +27,7 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
+  padding: 30px;
 }
 
 .nav-links {
@@ -35,12 +36,12 @@ body {
 }
 
 .nav-link {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .header-logo {
   text-decoration: none;
-  color: #e5e7eb;
+  color: #f9faf8;
   font-size: 24px;
 }
 
@@ -52,12 +53,33 @@ body {
 
 .hero-content {
   display: flex;
+  padding: 30px;
+  height: 500px;
 }
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* .hero-image {
+  max-width: 20%;
+} */
 
 .hero-main-text {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
+  padding-bottom: 20px;
 }
 
 .hero-secondary-text {
@@ -69,16 +91,22 @@ body {
   text-decoration: none;
   color: #e5e7eb;
   background-color: #3882f6;
+  border: 3px solid #3882f6;
   border-radius: 5px;
   padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.3s ease-in;
+}
+
+.signup-btn:hover {
+  color: #3882f6;
+  background-color: #e5e7eb;
+  border: 3px solid #3882f6;
 }
 
 .hero-image-container {
-  width: 10px;
-}
-
-.hero-image {
-  max-width: 100%;
+  display: flex;
+  max-width: 80%;
 }
 
 .testimonials {
@@ -122,7 +150,25 @@ body {
 }
 
 .quote-container {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
+}
+
+.quote-main-text {
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #888888;
+}
+
+.quote-second-text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 20px 0 0 0;
+  color: #1f2937;
+  font-weight: 900;
 }
 
 .cta {
@@ -138,14 +184,28 @@ body {
   display: flex;
   justify-content: center;
   width: 1200px;
-  padding: 50px;
+  padding: 50px 50px;
   margin: 50px;
   border-radius: 10px;
 }
 
-.cta-btn-container,
 .cta-text-container {
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 75px;
+}
+
+.cta-text-container h3 {
+  padding-bottom: 10px;
+}
+
+.cta-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 75px;
 }
 
 .cta-btn {
@@ -154,7 +214,14 @@ body {
   border: 3px solid #e5e7eb;
   background-color: none;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 7px 25px;
+  transition: 0.3s ease-in;
+}
+
+.cta-btn:hover {
+  color: #3882f6;
+  border: 3px solid #3882f6;
+  background-color: #e5e7eb;
 }
 
 .footer {
