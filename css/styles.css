@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -112,6 +113,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.quote-container {
+  padding: 50px;
 }
 
 .cta {
