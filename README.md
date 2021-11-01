@@ -1,2 +1,2 @@
 # landing-page
-The Odin Project Flexbox Landing Page Assignment 
+A small responsive Landing Page made with HTML and CSS
